@@ -1,0 +1,90 @@
+.banner_container {
+    .slides {
+        width: 100%;
+        height: 205px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+
+        * {
+            user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+        }
+
+        input {
+            display: none;
+
+            &:checked+.slide-container .slide {
+                opacity: 1;
+                transform: scale(1);
+                transition: opacity 1s ease-in-out;
+
+            }
+        }
+
+        input#img-1:checked~.nav-dots label#img-dot-1,
+        input#img-2:checked~.nav-dots label#img-dot-2,
+        input#img-3:checked~.nav-dots label#img-dot-3,
+        input#img-4:checked~.nav-dots label#img-dot-4,
+        input#img-5:checked~.nav-dots label#img-dot-5,
+        input#img-6:checked~.nav-dots label#img-dot-6,
+        input#img-7:checked~.nav-dots label#img-dot-7 {
+            background: rgba(62, 62, 62, 0.8);
+        }
+
+        .slide-container {
+            display: block;
+            border-radius: 10px;
+
+            .slide {
+                top: 0;
+                opacity: 0;
+                width: 100%;
+                height: 220px;
+                height: auto;
+                display: block;
+                position: absolute;
+                transform: scale(0);
+                right: 10px;
+                &:hover {
+                    opacity: 0.5;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .nav label:hover {
+            opacity: 1;
+        }
+
+        .nav-dots {
+            width: 100%;
+            bottom: -60px;
+            height: 11px;
+            position: absolute;
+            text-align: center;
+            .nav-dot {
+                margin: 0 6px;
+                position: relative;
+                top: 90px;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                display: inline-block;
+                background-color: rgba(182, 179, 179, 0.6);
+                &:hover {
+                    cursor: pointer;
+                    background: rgba(62, 62, 62, 0.8);
+                }
+            }
+        }
+
+    }
+}
