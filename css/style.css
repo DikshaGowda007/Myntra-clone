@@ -1,4 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+.footer_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0 40px 0;
+  background: #FAFBFC;
+}
+.footer_container .footer_column {
+  display: flex;
+  flex-direction: column;
+}
+.footer_container .footer_column:last-child {
+  margin-right: 60px;
+}
+.footer_container .footer_column .useful_links {
+  flex-direction: column-reverse;
+}
+.footer_container .footer_column h3 {
+  color: #282c3f;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.footer_container .footer_column h3:nth-of-type(2) {
+  margin-top: 20px;
+}
+.footer_container .footer_column .app_store {
+  display: flex;
+}
+.footer_container .footer_column .app_store img {
+  height: 42px;
+}
+.footer_container .footer_column .social-icons > a {
+  padding: 5px;
+}
+.footer_container .footer_column .return_policy {
+  display: inline-flex;
+  flex-direction: column;
+}
+.footer_container .footer_column a {
+  color: #696b79;
+  font-size: 15px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.footer_container .footer_popular_search {
+  box-sizing: content-box;
+}
+
+.contact_section {
+  display: flex;
+  justify-content: space-around;
+  color: #94969f;
+  text-align: end;
+  padding: 15px;
+}
+.contact_section a:first-child {
+  text-decoration: none;
+  font-weight: 700;
+  color: #526cd0;
+}
+.contact_section a {
+  text-decoration: none;
+  color: #94969f;
+}
+
 * {
   margin: 0;
   padding: 0;
