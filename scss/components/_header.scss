@@ -6,10 +6,20 @@
 
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #ffffff;
     height: 80px;
-    .myntra_home {
-        width: 53px;
-        height: 36px;
+
+    .logo_container {
+        margin-left: 4%;
+
+        .myntra_home {
+            width: 53px;
+            height: 36px;
+        }
+    }
+    .action_bar {
+        margin-right: 4%;
     }
 }
