@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    .myntra_home {
+        width: 53px;
+        height: 36px;
+    }
+}
