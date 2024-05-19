@@ -19,6 +19,25 @@ header {
             height: 36px;
         }
     }
+    .nav_bar {
+        display: flex;
+        min-width: 500px;
+        justify-content: space-between;
+        a {
+            font-size: 14px;
+            letter-spacing: .3px;
+            color: #282c3f;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        a:last-child:after {
+            vertical-align: super;
+            content: "New";
+            color: #ff3f6c;
+            font-size: 10px;
+        }
+    }
     .action_bar {
         margin-right: 4%;
     }
