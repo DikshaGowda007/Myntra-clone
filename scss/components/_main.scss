@@ -1,4 +1,6 @@
 .banner_container {
+    margin-bottom: 200px;
+
     .slides {
         width: 100%;
         height: 205px;
@@ -50,9 +52,11 @@
                 position: absolute;
                 transform: scale(0);
                 right: 10px;
+
                 &:hover {
                     opacity: 0.5;
                 }
+
                 img {
                     width: 100%;
                     height: auto;
@@ -70,6 +74,7 @@
             height: 11px;
             position: absolute;
             text-align: center;
+
             .nav-dot {
                 margin: 0 6px;
                 position: relative;
@@ -79,6 +84,7 @@
                 border-radius: 100%;
                 display: inline-block;
                 background-color: rgba(182, 179, 179, 0.6);
+
                 &:hover {
                     cursor: pointer;
                     background: rgba(62, 62, 62, 0.8);
@@ -88,3 +94,137 @@
 
     }
 }
+
+// Categories
+
+.category_container {
+    .category_slides {
+        width: 100%;
+        height: 205px;
+        // display: block;
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+
+        * {
+            user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+        }
+
+        input {
+            display: none;
+
+            &:checked+.category-slide-container .category_slide {
+                opacity: 1;
+                transform: scale(1);
+                transition: opacity 1s ease-in-out;
+
+            }
+        }
+
+        input#category-img-1:checked~.category-nav-dots label#category-img-dot-1,
+        input#category-img-2:checked~.category-nav-dots label#category-img-dot-2,
+        input#category-img-3:checked~.category-nav-dots label#category-img-dot-3,
+        input#category-img-4:checked~.category-nav-dots label#category-img-dot-4,
+        input#category-img-5:checked~.category-nav-dots label#category-img-dot-5,
+        input#category-img-6:checked~.category-nav-dots label#category-img-dot-6,
+        input#category-img-7:checked~.category-nav-dots label#category-img-dot-7 {
+            background: rgba(62, 62, 62, 0.8);
+        }
+
+        .category-slide-container {
+            // display: flex;
+            // flex-direction: column;
+            display: block;
+            border-radius: 10px;
+
+            .category_slide {
+                top: 0;
+                opacity: 0;
+                width: 100%;
+                height: 220px;
+                height: auto;
+                // display: block;
+                display: flex;
+                position: absolute;
+                transform: scale(0);
+                right: 10px;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+
+                img {
+                    width: calc(1262px / 6);
+                    // width: 100%;
+                    // height: auto;
+                }
+            }
+        }
+
+        .nav label:hover {
+            opacity: 1;
+        }
+
+        .category-nav-dots {
+            width: 100%;
+            bottom: -60px;
+            height: 11px;
+            position: absolute;
+            text-align: center;
+
+            .category-nav-dot {
+                margin: 0 6px;
+                position: relative;
+                top: 90px;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                display: inline-block;
+                background-color: rgba(182, 179, 179, 0.6);
+
+                &:hover {
+                    cursor: pointer;
+                    background: rgba(62, 62, 62, 0.8);
+                }
+            }
+        }
+
+    }
+}
+
+
+
+// 
+.category_heading {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+    .category_items {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-evenly;
+
+        .sale_item:first-child {
+            // width: 250px;
+            width: calc(1262px / 6);
+            height: auto;
+        }
+        &:nth-child(2) {
+            width: 250px;
+        }
+    
+    }
+
+
+
+// 
