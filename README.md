@@ -1,14 +1,4 @@
 # Myntra-clone
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-</div>
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -42,9 +32,9 @@ This project is a simple clone of the Myntra landing page, created using HTML, C
 
 ### Built With
 
-* [![HTML][JQuery.com]][HTML]
-* [![CSS][JQuery.com]][CSS (Flexbox)]
-* [![SCSS][JQuery.com]][SCSS]
+* [<img src="./icons/HTML.svg" width="48">][HTML]
+* [<img src="./icons/CSS.svg" width="48">][CSS (Flexbox)]
+* [<img src="./icons/Sass.svg" width="48">][SCSS]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -66,7 +56,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/DikshaGowda007/Myntra-clone.git
    ```
 2. Install NPM packages
    ```sh
