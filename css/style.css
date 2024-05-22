@@ -70,6 +70,22 @@
   color: #94969f;
 }
 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .footer_container {
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 480px) {
+  .footer_container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .contact_section {
+    font-style: italic;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 * {
   margin: 0;
   padding: 0;
