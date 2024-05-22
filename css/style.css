@@ -361,4 +361,16 @@ header .action_bar .action_container:first-child:hover {
   width: 250px;
 }
 
+@media all and (max-width: 480px) {
+  .banner_container {
+    margin-bottom: 0;
+  }
+  .banner_container .slides .nav-dots {
+    top: 10px;
+  }
+  .category_heading {
+    margin-top: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
