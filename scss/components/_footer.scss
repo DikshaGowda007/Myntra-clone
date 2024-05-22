@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-evenly;
     padding: 30px 0 40px 0;
-    background: #FAFBFC;
-    margin-top: 200px;
+    background: hsl(210, 25%, 98%);
+    margin-top: 55px;
 
     .footer_column {
         display: flex;
@@ -19,7 +19,7 @@
 
         h3 {
             color: #282c3f;
-            font-size: 14px;
+            font-size: 12px;
             margin-bottom: 25px;
         }
 
@@ -29,6 +29,8 @@
 
         .app_store {
             display: flex;
+            margin: 10px 0 10px 0;
+            column-gap: 10px;
 
             img {
                 height: 42px;
@@ -42,6 +44,10 @@
         .return_policy {
             display: inline-flex;
             flex-direction: column;
+            img {
+                width: 48px;
+                height: 40px;
+            }
         }
 
         a {
