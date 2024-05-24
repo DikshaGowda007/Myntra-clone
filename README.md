@@ -35,7 +35,7 @@ This project is a simple clone of the Myntra landing page, created using HTML, C
 <!-- * [<img src="./icons/HTML.svg" width="48">][HTML]
 * [<img src="./icons/CSS.svg" width="48">][CSS (Flexbox)]
 * [<img src="./icons/Sass.svg" width="48">][SCSS] -->
-*[![My Skills](https://skillicons.dev/icons?i=html,css,sass)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,sass)](https://skillicons.dev)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

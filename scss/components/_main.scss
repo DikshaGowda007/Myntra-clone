@@ -213,12 +213,13 @@
 
 .category_items {
     display: flex;
-    flex-wrap: wrap;
 
-    // justify-content: space-evenly;
-    &:nth-child(2) {
+    &:last-child {
+        
+    flex-wrap: wrap;
         // margin: 0 10px 0 10px;
     }
+    // justify-content: space-evenly;
 
     .sale_item {
         &:first-child {

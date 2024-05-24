@@ -348,6 +348,8 @@ header .action_bar .action_container:first-child:hover {
 
 .category_items {
   display: flex;
+}
+.category_items:last-child {
   flex-wrap: wrap;
 }
 .category_items .sale_item:first-child {
