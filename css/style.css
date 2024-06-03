@@ -176,6 +176,22 @@ header .action_bar .action_container {
   padding: 15px 0;
   border-bottom: 4px solid #ffffff;
 }
+header .action_bar .action_container .bag-item-count {
+  background-color: #f16565;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 18px;
+  padding: 0 6px;
+  height: 18px;
+  position: relative;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  left: 13px;
+  top: -50px;
+  font-weight: 700;
+  cursor: pointer;
+}
 header .action_bar .action_container:first-child:hover {
   border-bottom: 4px solid #f54e77;
 }
@@ -269,7 +285,7 @@ header .action_bar .action_container:first-child:hover {
 .items-container {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 60px;
+  margin: 0 0 0 70px;
 }
 .items-container .item-container {
   width: 252.4px;
