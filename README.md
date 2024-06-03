@@ -23,21 +23,15 @@
 ## About The Project
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-This project is a simple clone of the Myntra landing page, created using HTML, CSS with Flexbox, and SCSS. The goal of this project is to practice front-end web development skills, including responsive design techniques, while replicating the layout and design of the Myntra website.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This project is a simple clone of the Myntra landing page, created using HTML, CSS with Flexbox, SCSS and Javascript. The goal of this project is to practice front-end web development skills, including responsive design techniques, while replicating the layout and design of the Myntra Landing Page.
 
 
 
 ### Built With
 
-<!-- * [<img src="./icons/HTML.svg" width="48">][HTML]
-* [<img src="./icons/CSS.svg" width="48">][CSS (Flexbox)]
-* [<img src="./icons/Sass.svg" width="48">][SCSS] -->
-[![My Skills](https://skillicons.dev/icons?i=html,css,sass)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,sass,javascript)](https://skillicons.dev)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -65,4 +59,3 @@ This is an example of how to list things you need to use the software and how to
    ```
 3. Run on Live Server
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
