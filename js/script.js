@@ -10,22 +10,28 @@ if (window.pageYOffset >= 300) {
 })
 let bagItems = []
 const onLoad = () => {
+  let bagItemsStr = localStorage.getItem('bagItems')
+  bagItems = bagItemsStr ? JSON.parse(bagItemsStr) : []
   displayItemsonHomePage()
   displayBagIcon()
 }
-// onLoad()
 const addToBag = (itemId) => {
   bagItems.push(itemId)
+  localStorage.setItem('bagItems', JSON.stringify(bagItems))
   displayBagIcon()
 };
 const displayBagIcon =()=>{
   let bagItemCountElement = document.querySelector(".bag-item-count")
   console.log(bagItems.length)
   if (bagItems.length > 0) {
-    bagItemCountElement.style.visibilty = 'visible'
+    console.log("first")
+    console.log(bagItemCountElement.style.visibilty)
     bagItemCountElement.innerText = bagItems.length
+    bagItemCountElement.style.visibilty = 'visible'
+    console.log(bagItemCountElement.style.visibilty)
   } else {
     bagItemCountElement.style.visibilty = 'hidden'
+    console.log(bagItemCountElement.style.visibilty)
   }
 }
 const displayBagItem = () => {
@@ -62,4 +68,5 @@ const displayItemsonHomePage = () => {
   });
   itemsContainerElement.innerHTML = innerHTML;
 };
-displayItemsonHomePage()
+onLoad()
+// displayItemsonHomePage()
