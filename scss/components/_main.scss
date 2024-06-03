@@ -1,5 +1,4 @@
 .banner_container {
-    // background-color: #f8f8f8;
     margin-bottom: 200px;
 
     .slides {
@@ -99,11 +98,16 @@
 
 // 
 .items-container {
-    width: 80%;
-    margin: 40px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    // width: 80%;
+    margin-left: 60px;
+    // margin: 40px 10%;
 
     .item-container {
-        width: 200px;
+        // width: 200px;
+        width: calc(1262px / 5);
+        margin: 13px;
 
         .item-img {
             width: 100%;
@@ -145,7 +149,7 @@
 
             .current-price {
 
-                font-size: 14px;
+                font-size: 17px;
                 font-weight: 700;
                 color: #282c3f;
             }
@@ -156,15 +160,21 @@
                 color: #7e818c;
                 font-weight: 400;
                 margin-left: 5px;
-                font-size: 12px;
+                font-size: 13px;
             }
 
             .discount {
 
                 color: #ff905a;
                 font-weight: 400;
-                font-size: 12px;
+                font-size: 13px;
                 margin-left: 5px;
+            }
+            &::after {
+                content: "% off";
+                color: #ff905a;
+                font-weight: 400;
+                font-size: 13px;
             }
         }
 
@@ -177,6 +187,8 @@
             margin-top: 7px;
             font-size: 20px;
             cursor: pointer;
+            text-align: center;
+            font-weight: 700;
         }
     }
 }
@@ -326,9 +338,6 @@
 
 }
 
-
-
-// 
 
 
 // .banner_container .slides .nav-dots
