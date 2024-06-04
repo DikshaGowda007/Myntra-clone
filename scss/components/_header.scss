@@ -13,6 +13,7 @@ header {
     height: 80px;
     margin-bottom: 45px;
     width: 100%;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
     &.sticky {
         .nav_bar {
             a {
@@ -107,6 +108,7 @@ header {
             // justify-content: space-between;
             padding: 15px 0;
             border-bottom: 4px solid #ffffff;
+            text-decoration: none;
 
             .bag-item-count {
                 background-color: #f16565;
@@ -134,4 +136,6 @@ header {
 
 .sticky {
     position: fixed;
+    top: 0;
+    z-index: 100;
   }
